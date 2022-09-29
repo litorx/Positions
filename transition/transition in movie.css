@@ -1,0 +1,56 @@
+header,footer{
+    display: block;
+    }
+    main{
+        position: relative;
+        width: 760px;
+        height: 500px;
+        margin: 10px auto;
+        box-shadow: 0 0 10px #999;
+        background-color: rgba(255, 255, 0, 0.356);
+    }
+    main::after{
+        clear: both;
+    }
+    header{
+        width: 760px;
+       height: 110px;
+        background-image: url(image-ex2/header.jpg);
+        background-size: 100%;
+        margin-bottom: 40px;
+    }
+    div#janela1,div#janela2{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 130px;
+    }
+    #janela1{
+        left: 10px;
+        background-image: url(image-ex1/caviar.jpg);
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #janela2{
+        left: 180px;
+        background-image: url(image-ex1/Blanquette_de_veau.jpg);
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #janela1:hover + #janela2{
+        transition: all 0.5s ease-out;
+        transform: rotate(360deg);
+        left: 580px;
+    }
+    footer{
+        width: 7%;
+        height: 30px;
+        background-color:yellow;
+        text-align: center;
+    }
+    body{
+    background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p2/1907769-fundo-marrom-escuro-gr%C3%A1tis-foto.jpg);
+    
+    }
